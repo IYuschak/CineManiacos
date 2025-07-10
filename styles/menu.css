@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
+
+.menu-container {
+    background-color: #222;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+    transform: scale(1.1);
+    color: #bc9927;
+}

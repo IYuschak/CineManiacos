@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineManíacos</title>
     <link rel="icon" type="image/png" href="imagenes\logo.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles\global.css">
+    <link rel="stylesheet" href="styles\menu.css">
+    <link rel="stylesheet" href="styles\navbar.css">
+    <link rel="stylesheet" href="styles\producto.css">
+    <link rel="stylesheet" href="styles\reseña.css">
+    <link rel="stylesheet" href="styles\formulario.css">
 </head>
 
 <body>
@@ -18,13 +23,17 @@
         <p>donde vas a encontrar los mejores productos de merchandising de cine</p>
       </div>
       <div class="iconos-navbar">
-        <a href="#carrito" class="icono-pochoclo">
-          <img src="imagenes/carrito.png" alt="Carrito">
+        <a href="#carrito" class="icono-pochoclo-wrapper">
+          <div class="pochoclo-fondo"></div>
+          <img src="imagenes/carrito.png" alt="Carrito" class="icono-fijo">
         </a>
-        <a href="#perfil" class="icono-pochoclo">
-          <img src="imagenes/perfil.png" alt="Perfil">
+
+        <a href="#perfil" class="icono-pochoclo-wrapper">
+          <div class="pochoclo-fondo"></div>
+          <img src="imagenes/perfil.png" alt="Perfil" class="icono-fijo">
         </a>
       </div>
+
 
       <!-- <div class="iconos-navbar">
         <a href="#carrito" class="icono-circular">
@@ -139,7 +148,7 @@
 
   <section id="Contacto">
     <h2> Contactanos</h2>
-    <form action="https://formspree.io/f/mgvkqybk" method="POST">
+    <form  class="formulario-contacto" action="https://formspree.io/f/mgvkqybk" method="POST">
       <div><label for="nombre">Nombre:</label>
      <input type="text" id="nombre" name="nombre" required></div>
      

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.formulario-contacto button {
+  background-color: #bc9927;
+  color: #222;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #aa0000;
+  color: #fff;
+}

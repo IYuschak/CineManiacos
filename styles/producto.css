@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* Empuja el botón hacia abajo */
+  width: 200px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #222;
+}
+
+.producto-img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-nombre {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #222;
+    font-family: "Iceberg", Arial, Helvetica, sans-serif;
+}
+
+.producto-precio {
+    font-size: 1rem;
+    color: #aa0000;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton-carrito {
+    background-color: #bc9927;
+    color: #222;
+    border: 2px solid #222;
+    border-radius: 8px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.boton-carrito:hover {
+    background-color: #333;
+}
+
+.boton-carrito:active {
+    background-color: #aa0000;
+    color: white;
+    border-color: #aa0000;
+}

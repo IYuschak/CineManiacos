@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
+
+.reseñas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.reseña {
+    background-color: #ffffffa3;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: sans-serif;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseña:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #222;
+}
+
+.producto-nombre {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comentario {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.autor {
+    font-weight: bold;
+    color: #aa0000;
+}
