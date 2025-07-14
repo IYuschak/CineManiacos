@@ -25,12 +25,17 @@
       <div class="iconos-navbar">
         <a href="#carrito" class="icono-pochoclo-wrapper">
           <div class="pochoclo-fondo"></div>
-          <img src="imagenes/carrito.png" alt="Carrito" class="icono-fijo">
+          <div class="icono-contenido-movible">
+            <img src="imagenes/carrito.png" alt="Carrito" class="icono-fijo">
+            <span id="carrito-cantidad" >0</span>
+          </div>
         </a>
 
         <a href="#perfil" class="icono-pochoclo-wrapper">
           <div class="pochoclo-fondo"></div>
-          <img src="imagenes/perfil.png" alt="Perfil" class="icono-fijo">
+          <div class="icono-contenido-movible">
+            <img src="imagenes/perfil.png" alt="Perfil" class="icono-fijo">
+          </div>
         </a>
       </div>
 
@@ -65,7 +70,7 @@
             <h3 class="producto-nombre">Pochoclera Premium "Minions"</h3>
             <div>
             <p class="producto-precio">$9900</p>
-            <button class="boton-carrito">Agregar al carrito</button>
+            <button class="boton-carrito" data-id="1">Agregar al carrito</button>
             </div>
           </div>
 
@@ -74,7 +79,7 @@
             <h3 class="producto-nombre">Poster oficial "Free Guy"</h3>
             <div>
             <p class="producto-precio">$1500</p>
-            <button class="boton-carrito">Agregar al carrito</button>
+            <button class="boton-carrito" data-id="2">Agregar al carrito</button>
             </div>
           </div>
 
@@ -83,7 +88,7 @@
             <h3 class="producto-nombre">Entrada de recuerdo "Spiderman No Way Home"</h3>
             <div>
             <p class="producto-precio">$500</p>
-            <button class="boton-carrito">Agregar al carrito</button>
+            <button class="boton-carrito" data-id="3">Agregar al carrito</button>
             </div>
           </div>
 
@@ -92,7 +97,7 @@
             <h3 class="producto-nombre">Vaso premium "Flash"</h3>
             <div>
             <p class="producto-precio">$5000</p>
-            <button class="boton-carrito">Agregar al carrito</button>
+            <button class="boton-carrito" data-id="4">Agregar al carrito</button>
             </div>
           </div>
 
@@ -101,7 +106,7 @@
             <h3 class="producto-nombre">Vaso "Thunderbolts"</h3>
             <div>
             <p class="producto-precio">$4000</p>
-            <button class="boton-carrito">Agregar al carrito</button>
+            <button class="boton-carrito" data-id="5">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -177,5 +182,6 @@
     <p>&copy; 2025 CineManíacos. Todos los derechos reservados.</p>
   </footer>
 
+<script src="carrito.js"></script>
 </body>
 </html>
