@@ -47,17 +47,44 @@ document.querySelectorAll(".boton-carrito")
 // MODIFICAR PARA ACTUALIZAR SI SE CARGAN O ELIMINAN PRODUCTOS
 function actualizarCarrito() {
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  // actualizar número
   const contador = document.getElementById("carrito-cantidad");
-
-  if (!contador) return;
-
-  if (carrito.length === 0) {
-    contador.style.display = "none";
-  } else {
-    contador.style.display = "inline-block";
+  if (contador) {
     contador.textContent = carrito.length;
+    contador.style.display = carrito.length > 0 ? "inline-block" : "none";
+  }
+
+  // actualizar lista
+  const lista = document.getElementById("lista-carrito");
+  const totalSpan = document.getElementById("carrito-total");
+
+  if (lista && totalSpan) {
+    lista.innerHTML = "";
+    let total = 0;
+    carrito.forEach(prod => {
+      const li = document.createElement("li");
+      li.textContent = `${prod.nombre} - $${prod.precio}`;
+      lista.appendChild(li);
+      total += prod.precio;
+    });
+    totalSpan.textContent = total;
   }
 }
+
+// Mostrar el modal al hacer clic en el carrito
+document.querySelector('a[href="#carrito"]').addEventListener("click", (e) => {
+  e.preventDefault(); // evita salto de ancla
+  const modal = document.getElementById("modal-carrito");
+  modal.classList.toggle("abierto"); // alterna entre abierto/cerrado
+  actualizarCarrito(); // sigue actualizando el contenido del carrito
+});
+
+
+// Cerrar el modal
+document.getElementById("cerrar-modal").addEventListener("click", () => {
+  document.getElementById("modal-carrito").classList.remove("abierto");
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   actualizarCarrito();

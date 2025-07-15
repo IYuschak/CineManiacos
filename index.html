@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles\producto.css">
     <link rel="stylesheet" href="styles\reseña.css">
     <link rel="stylesheet" href="styles\formulario.css">
+    <link rel="stylesheet" href="styles\modal.css">
 </head>
 
 <body>
@@ -181,6 +182,16 @@
     </div>
     <p>&copy; 2025 CineManíacos. Todos los derechos reservados.</p>
   </footer>
+
+  <div id="modal-carrito" class="modal-carrito">
+    <div class="modal-contenido">
+      <h2>Mi Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="carrito-total">0</span></p>
+      <button id="cerrar-modal">Cerrar</button>
+    </div>
+  </div>
+
 
 <script src="carrito.js"></script>
 </body>

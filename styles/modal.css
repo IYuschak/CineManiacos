@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
+
+.modal-carrito {
+  font-family: "Iceberg", sans-serif;
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: #222222f7;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal-carrito.abierto {
+  left: 0; /* se muestra */
+}
+
+.modal-carrito h2 {
+  color: #bc9927;
+  margin-top: 0;
+}
+
+.modal-carrito p {
+  color: #bc9927;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  margin-bottom: 10px;
+}
+
+/* #cerrar-modal {
+  background-color: #bc9927;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+} */
+
+#cerrar-modal {
+  background-color: #bc9927;
+  color: #222;
+  border: 2px solid #222;
+  border-radius: 8px;
+  font-family: "Iceberg", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#cerrar-modal:hover {
+    background-color: #ffffff;
+}
+
+
+
