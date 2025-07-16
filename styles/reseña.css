@@ -36,3 +36,9 @@
     font-weight: bold;
     color: #aa0000;
 }
+
+@media (max-width: 600px) {
+  .reseñas-container {
+        grid-template-columns: 1fr;
+   }
+}

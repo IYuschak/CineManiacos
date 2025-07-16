@@ -17,7 +17,7 @@
 }
 
 .modal-carrito.abierto {
-  left: 0; /* se muestra */
+  left: 0;
 }
 
 .modal-carrito h2 {
@@ -38,16 +38,34 @@
   margin-bottom: 10px;
 }
 
-/* #cerrar-modal {
-  background-color: #bc9927;
-  color: black;
-  border: none;
-  padding: 8px 12px;
+.mas,
+.menos {
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #bc9927;
+  border-radius: 6px;
+  font-family: "Iceberg", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: 0 5px;
   cursor: pointer;
-  margin-top: 10px;
-} */
+  transition: background-color 0.3s, color 0.3s;
+}
 
-#cerrar-modal {
+.mas:hover,
+.menos:hover {
+  background-color: #bc9927;
+  color: #222;
+}
+
+.cant {
+  font-family: "Iceberg", sans-serif;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.botones-modal {
   background-color: #bc9927;
   color: #222;
   border: 2px solid #222;
@@ -60,9 +78,42 @@
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-#cerrar-modal:hover {
-    background-color: #ffffff;
+.botones-modal:hover {
+  background-color: #ffffff;
 }
 
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+}
 
+.item-carrito .nombre {
+  flex: 1;
+  font-size: 16px;
+}
 
+.controles-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.controles-cantidad button {
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #bc9927;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-family: "Iceberg", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controles-cantidad button:hover {
+  background-color: #bc9927;
+  color: #222;
+}

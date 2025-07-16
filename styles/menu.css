@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
 
 .menu-container {
+    position: fixed;
+    top: 140px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    height: 30px;
     background-color: #222;
+    z-index: 998;
     margin: 0 auto;
     padding: 20px 20px;
 }
 
 .menu {
     display: flex;
+    
     justify-content: space-around;
     list-style: none;
 }
@@ -22,4 +30,26 @@
 .menu li a:hover {
     transform: scale(1.1);
     color: #bc9927;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    gap: 10px;
+  }
+
+  .menu li a {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .menu-container {
+    top: 130px;
+    bottom: 10px;
+    height: 40px;
+    font-size: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
 }
