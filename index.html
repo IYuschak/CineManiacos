@@ -168,16 +168,16 @@
   <footer>
     <p> Nuestras redes sociales</p>
     <div class="redes-container">
-      <a href="https://www.whatsapp.com" target="_blank">
+      <a href="https://www.whatsapp.com" target="_blank" class="red-icon">
         <img src="imagenes\whatsapp.png" alt="Ícono de WhatsApp" class="redes-logos">
       </a>
-      <a href="https://www.instagram.com" target="_blank">
+      <a href="https://www.instagram.com" target="_blank" class="red-icon">
         <img src="imagenes\instagram.png" alt="Ícono de Instagram" class="redes-logos">
       </a>
-      <a href="https://www.x.com" target="_blank">
+      <a href="https://www.x.com" target="_blank" class="red-icon">
         <img src="imagenes\twitter.png" alt="Ícono de Twitter" class="redes-logos">
       </a>
-      <a href="https://www.facebook.com" target="_blank">
+      <a href="https://www.facebook.com" target="_blank" class="red-icon">
         <img src="imagenes\facebook.png" alt="Ícono de Facebook" class="redes-logos">
       </a>
     </div>
@@ -189,15 +189,20 @@
       <h2>Mi Carrito</h2>
       <ul id="lista-carrito"></ul>
       <p>Total: $<span id="carrito-total">0</span></p>
-      <button id="vaciar-carrito" class="botones-modal">Vaciar carrito</button>
-      <button id="cerrar-modal" class="botones-modal">Cerrar</button>
-      <button id="comprar" class="botones-modal boton-comprar">Comprar</button>
+      <div class="div-botones-modal">
+        <div class="botones-secundarios">
+          <button id="vaciar-carrito" class="botones-modal">Vaciar carrito</button>
+          <button id="cerrar-modal" class="botones-modal">Cerrar</button>
+        </div>
+        <button id="comprar" class="botones-modal boton-comprar">Comprar</button>
+      </div>
     </div>
   </div>
 
-  <div id="mensaje-compra" class="mensaje-compra oculto">
-    ¡Compra realizada con éxito!
+  <div id="overlay" class="overlay oculto">
+    <div id="mensaje-compra" class="mensaje-compra"></div>
   </div>
+  
 
 
 <script src="carrito.js"></script>

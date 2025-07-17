@@ -65,6 +65,31 @@
   padding: 0 10px;
 }
 
+.div-botones-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.botones-secundarios {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.botones-secundarios .botones-modal {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .botones-modal {
   background-color: #bc9927;
   color: #222;
@@ -76,19 +101,6 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.boton-comprar {
-  font-size: 1.1rem;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.boton-comprar:hover {
-  background-color: #218838;
 }
 
 .botones-modal:hover {
@@ -131,30 +143,48 @@
   color: #222;
 }
 
-.mensaje-compra {
+.overlay {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  color: #222;
-  border-color: #222;
-  padding: 15px 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  font-size: 3rem;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
-  font-family: "Iceberg", sans-serif;;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Debajo del mensaje pero arriba del resto */
 }
+
+.mensaje-compra {
+  width: 85px;
+  max-width: 90%;
+  padding: 30px 150px 30px 150px;
+  font-family: "Iceberg", sans-serif;
+  font-size: 2rem;
+  color: #222;
+  text-align: left;
+  z-index: 1000;
+
+  /* Imagen de fondo */
+  background-image: url("../imagenes/ticket.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: rgba(255, 255, 255, 0);
+}
+
 
 .oculto {
   display: none;
 }
 
+
 @media (max-width: 600px) {
 
   .mensaje-compra {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    width: 55px;
   }
 }

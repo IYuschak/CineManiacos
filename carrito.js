@@ -102,21 +102,29 @@ if (btnVaciar) {
    BOTÓN “COMPRAR”
 ─────────────────────────────────────────────── */
 
-function mostrarMensajeCompra() {
+function mostrarMensaje(texto) {
+  const overlay = document.getElementById('overlay');
   const mensaje = document.getElementById('mensaje-compra');
-  mensaje.classList.remove('oculto');
+  mensaje.textContent = texto;
+  overlay.classList.remove('oculto');
 
   setTimeout(() => {
-    mensaje.classList.add('oculto');
+    overlay.classList.add('oculto');
   }, 3000);
 }
 
 const btnComprar = document.getElementById("comprar");
 if (btnComprar) {
   btnComprar.addEventListener("click", () => {
-    mostrarMensajeCompra()
-    localStorage.removeItem("carrito");
-    actualizarCarrito();
+    const c  = getCarrito();
+    if (Object.keys(c).length > 0) {
+      mostrarMensaje("¡Compra realizada con éxito!");
+      localStorage.removeItem("carrito");
+      actualizarCarrito();
+    }
+    else {
+      mostrarMensaje("El carrito está vacío");
+    }
   });
 }
 
