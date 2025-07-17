@@ -78,6 +78,19 @@
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.boton-comprar {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+  background-color: #218838;
+}
+
 .botones-modal:hover {
   background-color: #ffffff;
 }
@@ -116,4 +129,32 @@
 .controles-cantidad button:hover {
   background-color: #bc9927;
   color: #222;
+}
+
+.mensaje-compra {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #222;
+  border-color: #222;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  font-size: 3rem;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+  font-family: "Iceberg", sans-serif;;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  .mensaje-compra {
+    font-size: 1rem;
+  }
 }

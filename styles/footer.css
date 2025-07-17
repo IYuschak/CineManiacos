@@ -1,0 +1,17 @@
+.redes-logos {
+    width: 30px;
+}
+
+footer {
+    background-color: #fcfcfc91;
+    color: #222;
+    padding: 20px 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}

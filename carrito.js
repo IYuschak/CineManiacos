@@ -99,6 +99,29 @@ if (btnVaciar) {
 }
 
 /* ───────────────────────────────────────────────
+   BOTÓN “COMPRAR”
+─────────────────────────────────────────────── */
+
+function mostrarMensajeCompra() {
+  const mensaje = document.getElementById('mensaje-compra');
+  mensaje.classList.remove('oculto');
+
+  setTimeout(() => {
+    mensaje.classList.add('oculto');
+  }, 3000);
+}
+
+const btnComprar = document.getElementById("comprar");
+if (btnComprar) {
+  btnComprar.addEventListener("click", () => {
+    mostrarMensajeCompra()
+    localStorage.removeItem("carrito");
+    actualizarCarrito();
+  });
+}
+
+
+/* ───────────────────────────────────────────────
    TOGGLE DEL MODAL
 ─────────────────────────────────────────────── */
 const modal        = document.getElementById("modal-carrito");
