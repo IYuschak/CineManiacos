@@ -17,11 +17,11 @@ footer {
 }
 
 .red-icon {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .red-icon:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }

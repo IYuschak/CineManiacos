@@ -3,7 +3,6 @@
 .logo {
     width: 150px;
     height: 150px;
-    /* margin: 20px 30px 0 0; */
     object-fit: contain;
 }
 
@@ -14,109 +13,65 @@
     padding: 0 20px;
 }
 
-/* FONDO PARA LOS ICONOS EN FORMA DE CÍRCULO */
-.icono-circular {
-  background-color: #bc9927;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.icono-circular img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-/* FONDO PARA LOS ICONOS EN FORMA DE POCHOCLO */
-/* .icono-pochoclo {
-  background-image: url("imagenes/fondo-pochoclo-2.png");
-  background-size: cover;
-  background-position: center;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  text-decoration: none;
-  transition: transform 0.4s ease-in-out;
-}
-
-.icono-pochoclo:hover {
-  transform: rotate(360deg);
-}
-
-.icono-pochoclo img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-} */
-
 .icono-pochoclo-wrapper {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
 }
 
 .pochoclo-fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 120px;
-  background-image: url("fondo-pochoclo-2.png");
-  background-size: cover;
-  background-position: center;
-  /* border-radius: 50%; opcional si querés que la imagen también sea circular */
-  transition: transform 0.6s ease-in-out;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background-image: url("fondo-pochoclo-2.png");
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease-in-out;
+    z-index: 1;
 }
 
 .icono-fijo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
 }
 
 .icono-pochoclo-wrapper:hover .pochoclo-fondo {
-  transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .icono-pochoclo-wrapper:hover .icono-contenido-movible {
-  transform: translate(-50%, -50%) scale(1.05); /* agranda el ícono */
-  transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1.05); /* agranda el ícono */
+    transition: transform 0.3s ease-in-out;
 }
 
 .icono-contenido-movible {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
 }
 
 #carrito-cantidad {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  background: #aa0000bc; 
-  color: white; 
-  font-size: 12px;
-  border-radius: 50%; 
-  padding: 2px 6px;
-  z-index: 3;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: #aa0000bc; 
+    color: white; 
+    font-size: 12px;
+    border-radius: 50%; 
+    padding: 2px 6px;
+    z-index: 3;
 }
 
 @media (max-width: 600px) {

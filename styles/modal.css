@@ -1,183 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
 
 .modal-carrito {
-  font-family: "Iceberg", sans-serif;
-  position: fixed;
-  top: 0;
-  left: -350px;
-  width: 300px;
-  height: 100%;
-  background-color: #222222f7;
-  color: white;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
-  overflow-y: auto;
-  transition: left 0.3s ease;
-  z-index: 999;
-  padding: 20px;
+    font-family: "Iceberg", sans-serif;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background-color: #222222f7;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding: 20px;
 }
 
 .modal-carrito.abierto {
-  left: 0;
+    left: 0;
 }
 
 .modal-carrito h2 {
-  color: #bc9927;
-  margin-top: 0;
+    color: #bc9927;
+    margin-top: 0;
 }
 
 .modal-carrito p {
-  color: #bc9927;
+    color: #bc9927;
 }
 
 #lista-carrito {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 #lista-carrito li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .mas,
 .menos {
-  background-color: #222;
-  color: #fff;
-  border: 2px solid #bc9927;
-  border-radius: 6px;
-  font-family: "Iceberg", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 5px 12px;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #bc9927;
+    border-radius: 6px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .mas:hover,
 .menos:hover {
-  background-color: #bc9927;
-  color: #222;
+    background-color: #bc9927;
+    color: #222;
 }
 
 .cant {
-  font-family: "Iceberg", sans-serif;
-  font-size: 18px;
-  padding: 0 10px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 18px;
+    padding: 0 10px;
 }
 
 .div-botones-modal {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .botones-secundarios {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .botones-secundarios .botones-modal {
-  flex: 1;
-  padding: 10px 0;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: none;
-  background-color: #ccc;
-  color: #000;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    flex: 1;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .botones-modal {
-  background-color: #bc9927;
-  color: #222;
-  border: 2px solid #222;
-  border-radius: 8px;
-  font-family: "Iceberg", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: #bc9927;
+    color: #222;
+    border: 2px solid #222;
+    border-radius: 8px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .botones-modal:hover {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .item-carrito {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
 }
 
 .item-carrito .nombre {
-  flex: 1;
-  font-size: 16px;
+    flex: 1;
+    font-size: 16px;
 }
 
 .controles-cantidad {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .controles-cantidad button {
-  background-color: #222;
-  color: #fff;
-  border: 2px solid #bc9927;
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-family: "Iceberg", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #bc9927;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .controles-cantidad button:hover {
-  background-color: #bc9927;
-  color: #222;
+    background-color: #bc9927;
+    color: #222;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999; /* Debajo del mensaje pero arriba del resto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 .mensaje-compra {
-  width: 85px;
-  max-width: 90%;
-  padding: 30px 150px 30px 150px;
-  font-family: "Iceberg", sans-serif;
-  font-size: 2rem;
-  color: #222;
-  text-align: left;
-  z-index: 1000;
+    width: 85px;
+    max-width: 90%;
+    padding: 30px 150px 30px 150px;
+    font-family: "Iceberg", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    text-align: left;
+    z-index: 1000;
 
-  /* Imagen de fondo */
-  background-image: url("../imagenes/ticket.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url("../imagenes/ticket.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
 .oculto {
-  display: none;
+    display: none;
 }
 
 

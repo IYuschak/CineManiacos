@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Notable&display=swap');
 
 .producto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;   /* Empuja el botón hacia abajo */
-  width: 200px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  background-color: #fff;
-  margin: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto:hover {
